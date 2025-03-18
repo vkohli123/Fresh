@@ -40,7 +40,7 @@ dependencies {
     implementation 'com.github.Tejovarmabuddyloan:demo-sample-library:0.0.2'
 
     // Your Library (Published via Maven)
-    implementation 'io.github.vkohli123:myplugin:1.0.0' // Ensure this is correct
+    implementation 'io.github.vkohli123:myplugin:1.0.2' // Ensure this is correct
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

@@ -45,9 +45,9 @@ repositories {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.github.vkohli123' // JitPack format
+            groupId = 'io.github.vkohli123' // JitPack format
             artifactId = 'myplugin'
-            version = '1.0.0'
+            version = '1.0.2'
 
             from components.findByName("release")
  // Use the release variant
