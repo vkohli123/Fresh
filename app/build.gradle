@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.fresh'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.fresh"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // External Libraries
+    implementation 'com.github.Tejovarmabuddyloan:Java_stage:0.0.5'
+    implementation 'com.github.Tejovarmabuddyloan:Fresh:0.0.8'
+    implementation 'com.github.Tejovarmabuddyloan:demo-sample-library:0.0.2'
+
+    // Your Library (Published via Maven)
+    implementation 'io.github.vkohli123:myplugin:1.0.0' // Ensure this is correct
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
