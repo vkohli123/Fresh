@@ -16,5 +16,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Fresh-master"
+// Include project modules
 include ':app'
 include ':check'
