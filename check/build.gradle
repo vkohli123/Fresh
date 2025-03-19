@@ -44,7 +44,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.findByName("release")
                 groupId = 'com.github.vkohli123'
-                artifactId 'Fresh'
+                artifactId 'fresh'
                 version '0.0.9'
 
             }

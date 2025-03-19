@@ -31,15 +31,15 @@ android {
 }
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
-    // External Libraries
-//    implementation 'com.github.vkohli123:Java_stage:0.0.5'
-    implementation 'com.github.vkohli123:Fresh:0.0.9'
-//    implementation 'com.github.vkohli123:demo-sample-library:0.0.2'
+//    implementation 'com.github.Tejovarmabuddyloan:Java_stage:0.0.5'
 //    implementation project(':check')
+    implementation 'com.github.vkohli123:Fresh:0.0.9'
+    implementation project(':check')
+//    implementation 'com.github.Tejovarmabuddyloan:demo-sample-library:0.0.2'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
