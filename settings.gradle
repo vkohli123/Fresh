@@ -5,7 +5,6 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -15,7 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Fresh-master"
-// Include project modules
-include ':app'
-include ':check'
+rootProject.name = "Fresh"
+include ':app', ':check'

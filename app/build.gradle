@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+//    id 'maven-publish'
 }
 
 android {
@@ -24,8 +25,8 @@ android {
     }
     
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
@@ -35,14 +36,35 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // External Libraries
-    implementation 'com.github.Tejovarmabuddyloan:Java_stage:0.0.5'
-    implementation 'com.github.Tejovarmabuddyloan:Fresh:0.0.8'
-    implementation 'com.github.Tejovarmabuddyloan:demo-sample-library:0.0.2'
-
-    // Your Library (Published via Maven)
-    implementation 'io.github.vkohli123:myplugin:1.0.2' // Ensure this is correct
+//    implementation 'com.github.vkohli123:Java_stage:0.0.5'
+    implementation 'com.github.vkohli123:Fresh:0.0.9'
+//    implementation 'com.github.vkohli123:demo-sample-library:0.0.2'
+//    implementation project(':check')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+//afterEvaluate {
+//    android.applicationVariants.all { variant ->
+//        publishing.publications.create(variant.name, MavenPublication) {
+//            from components.findByName(variant.name)
+//
+//            groupId = 'com.example'
+//            artifactId = "fresh"
+//            version = '1.0.1'
+//        }
+//    }
+//}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                groupId = 'com.example'
+//                artifactId = "fresh"
+//                version = '1.0.1'
+//
+//            }
+//        }
+//    }
+//}
